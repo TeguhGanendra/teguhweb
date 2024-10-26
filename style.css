@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 2px 0;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+
+	background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3px 0;
+}
+profile-photo {
+    width: 15%; /* Mengatur lebar gambar */
+    height: 15%; /* Mengatur tinggi gambar */
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    display: block;
+    margin: 20px auto; /* Memposisikan gambar di tengah */
+
+}
