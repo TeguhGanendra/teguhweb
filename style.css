@@ -1,6 +1,6 @@
 /* Dasar Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, #000428, #004e92);
@@ -13,7 +13,7 @@ body {
 .sticky-header {
     position: sticky;
     top: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgb(78 107 174 / 46%);
     color: white;
     padding: 15px 0;
     text-align: center;
