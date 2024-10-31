@@ -1,54 +1,137 @@
+/* Dasar Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
+    background: linear-gradient(45deg, #000428, #004e92);
     color: white;
-    padding: 2px 0;
-    text-align: center;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: sticky;
-    z-index: 1000;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-nav ul {
+/* Header Sticky */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sticky-header nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-nav ul li a {
+.sticky-header nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
 }
 
-section {
-    padding: 20px;
-    margin: 20px;
+.sticky-header nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
 }
 
-footer {
+/* Efek Ketikan */
+.typing-animation {
+    font-size: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: 0;
+    animation: typing 4s steps(40, end) infinite, blink-caret 0.75s step-end infinite;
+}
 
-	background-color: #333;
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
+
+/* Content Section */
+.content-section {
+    padding: 60px 30px;
+    text-align:leftwards;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 3px 0;
-}
-profile-photo {
-    width: 15%; /* Mengatur lebar gambar */
-    height: 15%; /* Mengatur tinggi gambar */
-    border-radius: 50%; /* Membuat gambar berbentuk bulat */
-    display: block;
-    margin: 20px auto; /* Memposisikan gambar di tengah */
-
+    padding: 20px 0;
+    font-size: 14px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
 }
